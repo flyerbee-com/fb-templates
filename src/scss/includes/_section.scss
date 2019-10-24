@@ -1,0 +1,70 @@
+//* ================ Section Styling ================== *//
+
+
+.section-title {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 1.25rem 0 1rem;
+	.section-heading {
+		font-size: 1.25rem;
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+	.section-title-link-stack {
+		position: absolute;
+		right: 0;
+		font-size: 0.875rem;
+		bottom: 1.25rem;
+		a {
+			font-weight: 500;
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
+		}
+	}
+}
+
+.content-box {
+	background: #fff;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	&-nav {
+		padding: 1.5rem 1.5rem 0rem;
+		font-weight: 500;
+	}
+	&-header {
+		padding: 1.5rem 1.5rem 1.25rem;
+		border-bottom: 1px solid $gray-200;
+		position: relative;
+	}
+	&-title {
+		margin-bottom: 0;
+	}
+	&-body {
+		padding: 1.5rem;
+	}
+	&-table {
+		tr {
+			th:first-child, td:first-child {
+				padding-left: 1.5rem;
+			}
+		}
+		thead {
+			tr {
+				td, th {
+					border-top: none;
+				}
+			}
+		}
+		.table-striped {
+			th, td {
+				border-color: $gray-200;
+			}
+			tbody tr:nth-of-type(odd) {
+				background: $gray-100;
+			}
+		}
+		
+	}
+}

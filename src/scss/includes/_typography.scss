@@ -1,0 +1,29 @@
+// Typography
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+}
+
+
+h2, .h2 {
+	font-size: 1.875rem;
+}
+
+.text-md {
+	font-size: 0.875rem;
+	i.material-icons {
+		font-size: 0.875rem;
+	}
+}
+
+.text-sm {
+	font-size: 0.75rem;
+	i.material-icons {
+		font-size: 0.75rem;
+	}
+}
+

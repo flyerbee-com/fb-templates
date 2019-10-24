@@ -1,0 +1,48 @@
+//* =========== Inner Sidebar ========== *//
+
+
+.page-content {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: calc(100vh - 96px);
+}
+
+.inner-sidebar {
+	background: $gray-200;
+	flex: 0 0 100%;
+	margin-left: auto;
+	padding: 1.5rem 1rem;
+}
+
+.inner-content {
+	padding-top: 2.5rem;
+	flex: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 5rem;
+}
+
+
+@media only screen and (min-width:992px) {
+	.inner-content {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;
+	}
+	.inner-sidebar {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		padding-top: 2.5rem;
+		padding-bottom: 1.5rem;
+	}
+}
+
+@media only screen and (min-width:1399px) {
+	.inner-sidebar {
+		flex: 0 0 400px;
+		padding: 1.75rem 1.5rem 5rem;
+	}
+	.page-content {
+		flex-wrap: nowrap;
+	}
+}
+

@@ -1,0 +1,58 @@
+//* ============== Header ============= *//
+
+.top-bar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	z-index: 2;
+}
+
+.page-title {
+	margin-top: 4px;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	padding-left: 2.5rem;
+}
+
+.header-controls {
+	height: 3rem;
+	display: flex;
+	justify-content: flex-end;
+	& > a {
+		display: flex;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		color: $gray-600;
+		& > i {
+			margin-top: 4px;
+		}
+		&:not(:first-child) {
+			border-left: 1px solid $gray-100;
+		}
+		&:hover {
+			background: $gray-100;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.header-controls {
+		height: 6rem;
+		& > a {
+			width: 5.5rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.page-title {
+		border-top: 1px solid $gray-100;
+		margin-top: 0;
+		padding: 0.75rem 1rem 0.5rem;
+	}
+}

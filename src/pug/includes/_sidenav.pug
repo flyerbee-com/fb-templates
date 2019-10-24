@@ -1,0 +1,107 @@
+mixin sidenav
+	.main-sidebar-nav.elevation-2
+		.logo-holder
+			a.fb-logo(href='index.html')
+				img(src='img/logo.png')
+			.sidebar-toggler
+				.left-nav-toggle
+					a.nav-collapse(href='#')
+						i.material-icons menu
+				.left-nav-collapsed
+					a.nav-collapsed(href='#')
+						i.material-icons menu
+		.nano
+			.nano-content.sidebar-nav
+				ul#menu.metisMenu.nav.flex-column
+					li.nav-item.active
+						a.nav-link(href='index.html')
+							i.material-icons dashboard
+							span
+								| Dashboard 
+								span.badge.badge-pill.badge-success.float-right.mr-2 5
+					li.nav-item
+						a.nav-link(href='javascript: void(0);', aria-expanded='false')
+							i.material-icons desktop_windows
+							span
+								| Admin
+								span.badge.badge-pill.badge-success.float-right.mr-2 4
+								i.material-icons.arrow keyboard_arrow_right
+						ul.nav.flex-column.sub-menu(aria-expanded='false')
+							li.nav-item
+								a.nav-link(href='#0') Contacts
+									span.badge.badge-pill.badge-success.float-right.mr-2 4
+							li.nav-item
+								a.nav-link(href='#0') Finance & Accounting
+					li.nav-item
+						a.nav-link(href='javascript: void(0);', aria-expanded='false')
+							i.material-icons widgets
+							span
+								| Assets 
+								i.material-icons.arrow keyboard_arrow_right
+						ul.nav.flex-column.sub-menu(aria-expanded='false')
+							li.nav-item
+								a.nav-link(href='#0') Locations
+							li.nav-item
+								a.nav-link(href='#0') Fixture Network
+							li.nav-item
+								a.nav-link(href='#0') Digital Network
+							li.nav-item
+								a.nav-link(href='#0') Audiences
+								
+					li.nav-item
+						a.nav-link(href='javascript: void(0);', aria-expanded='false')
+							i.material-icons insert_chart
+							span
+								| Sales 
+								i.material-icons.arrow keyboard_arrow_right
+						ul.nav.flex-column.sub-menu(aria-expanded='false')
+							li.nav-item
+								a.nav-link(href='#0') Products & Services
+							li.nav-item
+								a.nav-link(href='#0') Sales
+							li.nav-item
+								a.nav-link(href='#0') Bids
+					
+					li.nav-item
+						a.nav-link(href='javascript: void(0);', aria-expanded='false')
+							i.material-icons business_center
+							span
+								| Projects 
+								i.material-icons.arrow keyboard_arrow_right
+						ul.nav.flex-column.sub-menu(aria-expanded='false')
+							li.nav-item
+								a.nav-link(href='#0') Projects
+							li.nav-item
+								a.nav-link(href='#0') Campaigns
+								
+					li.nav-item
+						a.nav-link(href='javascript: void(0);', aria-expanded='false')
+							i.material-icons person_pin
+							span
+								| Operations 
+								i.material-icons.arrow keyboard_arrow_right
+						ul.nav.flex-column.sub-menu(aria-expanded='false')
+							li.nav-item
+								a.nav-link(href='#0') Work Orders
+							li.nav-item
+								a.nav-link(href='#0') Dispatch
+							li.nav-item
+								a.nav-link(href='#0') Warehouse
+							li.nav-item
+								a.nav-link(href='#0') Tours
+							li.nav-item
+								a.nav-link(href='#0') Resources
+					
+					li.nav-item
+						a.nav-link(href='javascript: void(0);', aria-expanded='false')
+							i.material-icons settings
+							span
+								| Settings 
+								i.material-icons.arrow keyboard_arrow_right
+						ul.nav.flex-column.sub-menu(aria-expanded='false')
+							li.nav-item
+								a.nav-link(href='#0') Account
+							li.nav-item
+								a.nav-link(href='#0') Properties
+							li.nav-item
+								a.nav-link(href='#0') Data Sources

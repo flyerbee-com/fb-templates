@@ -1,0 +1,55 @@
+@import 'includes/reset';
+@import 'var';
+@import 'includes/typography';
+@import 'includes/table';
+@import 'includes/sidenav';
+@import 'includes/header';
+@import 'includes/inner-sidebar';
+@import 'includes/section';
+
+
+div {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-size: 16px;
+	line-height: normal;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	font-weight: 400;
+}
+
+body {
+	background: $gray-100;
+	overflow-x: hidden;
+	height: 100%;
+	position: relative;	
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.page {
+	padding-top: 6rem;
+	.page-inset {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.page {
+		.page-inset {
+			padding-left: 280px;
+		}
+	}
+	.nav-collapsed {
+		.page {
+			.page-inset {
+				padding-left: 88px;
+			}
+		}
+	}
+}
